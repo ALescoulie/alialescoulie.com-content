@@ -1,0 +1,15 @@
+{ 
+    "file_path": "homeopathy.md",
+    "post_dir": "homeopathy",
+    "format": "markdown",
+    "static_dir": "static",
+    "title": "Homeopathy Calculator",
+    "authors": ["Alia Lescoulie"],
+    "day": 1,
+    "month": 1,
+    "year": 2023,
+    "description": "Looking at homeopathy from a chemists prospective",
+    "thumbnail": "foobar.png",
+    "project": null,
+    "tags": ["commentary", "science"]
+}
