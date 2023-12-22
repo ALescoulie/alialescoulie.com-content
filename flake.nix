@@ -29,14 +29,18 @@
 
       in
       {
+
+        content-utils = mkPoetryApplication {
+          projectDir = ./.; 
+        };
+
         packages = {
-          myapp = mkPoetryApplication { projectDir = self; };
           default = self.packages.${system}.myapp;
         };
 
         devShells.default = pkgs.mkShell {
           inputsFrom = [ self.packages.${system}.myapp ];
-          packages = [ pkgs.poetry pandoc ];
+          packages = [ pkgs.poetry pandoc sitegen.packages.${system}.sitegen ];
         };
       });
 }
